@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+   
+</head>
+<body>
+    <hr>
+    <header>
+        <div class="container flex-end">
+            <h1>Maikel Peixouto</h1>
+           <div class="menuHeader">
+                <div class="item"> 
+                    <a href="#divSobre">Sobre Mim</a> 
+                </div>
+                <div class="item"> 
+                    <a href="#divRedes">Minhas Redes</a> 
+                </div>
+                <div class="item"> 
+                    <a href="#divTrab">Experiências Profissionais</a> 
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <section>
+        <article id="divSobre">
+            <span>
+                Quem sou eu?
+            </span>
+            <img src="assets/img/avatar.png" alt="">
+            <span>
+                Meu nome é Maikel, estudante de Análise e Desenvolvimento de Sistemas
+            </span>
+        </article>
+        <hr>
+        <article id="divRedes">
+            <h1>
+                Como me encontrar?
+            </h1>
+            <p>Confira abaixo, minhas redes:
+            </p>
+            <div id="divRedess">
+                <a href="https://www.linkedin.com/in/maikel-peixouto-665061145/" target="_blank">
+                    <img src="https://marcas-logos.net/wp-content/uploads/2020/01/LinkedIn-Logo-1.png" alt="lkdn">
+                </a>
+                <a href="https://github.com/MaikelPeixouto" target="_blank">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Emblem.png" alt="gh">    
+                </a>
+                <a href="https://www.instagram.com/maikel_peixouto/" target="_blank">
+                    <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/instagram_logo_icon_170643.png" alt="inst">
+                </a>
+            </div> 
+        </article>
+        <hr>
+        <article>
+           <h1>Meus Trabalhos</h1>
+           <div id="divTrab">
+               <div id="divTrabb">
+                   <span>
+                        Trabalhos em Time
+                    </span>
+                    <a href="https://github.com/MaikelPeixouto" target="_blank"> 
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="team">
+                    </a>
+                </div>
+                <div id="divTrabb">
+                    <span>
+                        Desenvolvimentos de Software
+                    </span>
+                    <a href="https://github.com/MaikelPeixouto" target="_blank"> 
+                        <img src="https://images.unsplash.com/photo-1621609764095-b32bbe35cf3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="dev">
+                    </a>
+                </div>
+                <div id="divTrabb">
+                    <span>
+                        Lógicas
+                    </span>
+                    <a href="https://github.com/MaikelPeixouto" target="_blank"> 
+                        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="code">
+                    </a>
+                </div>
+           </div>
+        </article>
+        <footer>
+            <hr>
+            <h1>ma1999px@gmail.com<h1>
+        </footer>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+body{
+    margin: auto 0px;
+    background-color: bisque;
+    background-image: linear-gradient(45deg, rgb(133, 53, 53), rgb(0, 8, 0));
+    color: white;
+}
+
+
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+}
+
+h1{
+    font-size: larger;
+}
+
+.flex-end
+{
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 20px 0px 20px;
+}
+
+.menuHeader{
+    flex-direction: row;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuHeader a, a:link, a:visited{
+    list-style: none;
+    text-decoration: none;
+    font-size: larger;
+}
+
+@media (max-width: 1000px)
+{
+    .flex-end h1{
+        font-size: smaller;
+    }
+    .menuHeader a, a:link, a:visited{
+        font-size: smaller;
+    }
+    .menuHeader{
+        width: 50%;
+    }
+    .item{
+        min-width: 35%;
+        text-overflow: ellipsis;
+    }
+}
+
+#divSobre{
+    display: flex;
+    width: 96.6%;
+    height: auto;
+    font-size: larger;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 30px;
+}
+
+#divSobre img{
+    width: 30%;
+    border-radius: 50%;
+}
+
+#divSobre span{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif  ;
+    font-size: larger;
+    text-align: center;
+}
+
+#divRedes{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: larger;
+}
+
+#divRedes a{
+    padding: 30px;
+}
+
+#divRedes img{
+    width: 200px;
+}
+
+#divRedess{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+}
+
+#divTrab{
+    display: flex;
+    text-align: center;
+    font-size: larger;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#divTrabb{
+    display: flex;
+    flex-direction: column;
+}
+
+#divTrabb img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit:cover;
+}
+
+#divTrabb span{
+    padding: 30px;
+
+}
+
+article{
+    text-align: center;
+    font-size: larger;
+}
+
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 5%;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
